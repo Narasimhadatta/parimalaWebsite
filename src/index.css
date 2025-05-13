@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 0 100% 30%; /* seva-red */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 43 77% 52%; /* seva-gold */
+  --secondary-foreground: 0 0% 98%;
+  --accent: 24 100% 60%; /* seva-saffron */
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+
+  /* Custom colors */
+  --seva-red: 0 100% 30%;
+  --seva-gold: 43 77% 52%;
+  --seva-saffron: 24 100% 60%;
+  --seva-purple: 300 100% 25%;
+  --seva-cream: 48 100% 96%;
+  --seva-brown: 30 25% 23%;
+
+  /* Chart colors */
+  --chart-1: 0 100% 30%;
+  --chart-2: 43 77% 52%;
+  --chart-3: 24 100% 60%;
+  --chart-4: 300 100% 25%;
+  --chart-5: 48 100% 96%;
+
+  /* Sidebar colors */
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 20 14.3% 4.1%;
+  --sidebar-primary: 0 100% 30%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 43 77% 52%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 20 5.9% 90%;
+  --sidebar-ring: 20 14.3% 4.1%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 0 100% 30%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 43 77% 52%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 24 100% 60%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-lora antialiased bg-seva-cream text-seva-brown;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cinzel font-bold;
+  }
+}
+
+@layer components {
+  .decorative-divider {
+    @apply h-8 my-8 bg-contain bg-repeat-x;
+    background-image: url('https://www.shutterstock.com/image-vector/abstract-vector-flowers-illustration-eps-260nw-1444667489.jpg');
+  }
+
+  .nav-item {
+    @apply relative;
+  }
+  
+  /* Add group functionality manually */
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-dropdown {
+    @apply hidden absolute top-full left-0 bg-seva-cream shadow-lg w-48 p-4 rounded-b border-t-2 border-seva-gold z-50;
+  }
+
+  .nav-item:hover .nav-dropdown {
+    display: block;
+  }
+
+  .ornate-border {
+    @apply relative;
+  }
+  
+  .ornate-border::before {
+    @apply content-[''] absolute -bottom-6 -right-6 w-24 h-24 border-r-4 border-b-4 border-seva-gold;
+  }
+  
+  .ornate-border::after {
+    @apply content-[''] absolute -top-6 -left-6 w-24 h-24 border-l-4 border-t-4 border-seva-gold;
+  }
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/cinzeldecorative/v14/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMk.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.gstatic.com/s/cinzeldecorative/v14/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa-lKVAA.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://fonts.gstatic.com/s/cinzeldecorative/v14/daaHSScvJGqLYhG8nNt8KPPswUAPniZQXexLVAA.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq0.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787zAvBJBkq0.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/lora/v32/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92nA.woff2') format('woff2');
+}
