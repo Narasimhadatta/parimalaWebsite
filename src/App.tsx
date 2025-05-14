@@ -28,6 +28,13 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    const redirect = sessionStorage.redirect;
+    if (redirect) {
+      sessionStorage.removeItem("redirect");
+      window.history.replaceState(null, null, redirect);
+    }
+  }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
