@@ -2,11 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script>
-      // Redirect to index.html and preserve path
+    <title>Redirecting...</title>
+    <script type="text/javascript">
       const path = location.pathname + location.search + location.hash;
-      sessionStorage.redirect = path;
-      window.location.replace('/');
+      window.location.replace('/?' + path);
     </script>
   </head>
   <body></body>
