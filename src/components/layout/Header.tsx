@@ -45,49 +45,14 @@ const Header = () => {
       
       {/* Main Navigation */}
       <nav className="bg-seva-cream border-b-4 border-seva-gold relative z-10">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
+        <div className="container mx-auto ">
+          <div className="flex justify-between items-center ">
             {/* <Link href="/" className="text-3xl font-cinzel font-bold text-seva-red">
               Seva<span className="text-seva-gold">360</span>
             </Link> */}
-          <div className='h-20 w-auto'>
-          <svg
-  viewBox="0 0 512 512"
-  xmlns="http://www.w3.org/2000/svg"
-  className="h-24 w-auto"
-  fill="none"
->
-  <circle cx="256" cy="256" r="230" stroke="#FF7B00" strokeWidth="5" />
-  <circle cx="256" cy="256" r="180" stroke="#FF7B00" strokeWidth="2" />
-
-  <rect x="156" y="130" width="200" height="200" fill="#D34900" rx="10" />
-  <polygon points="256,60 226,130 286,130" fill="#D34900" />
-  <line x1="256" y1="60" x2="256" y2="40" stroke="#FF7B00" strokeWidth="3" />
-  <text x="250" y="30" fill="#FF7B00" fontSize="20" fontWeight="bold">🚩</text>
-
-  <text
-    x="140"
-    y="390"
-    fontFamily="Cinzel, serif"
-    fontSize="50"
-    fontWeight="bold"
-    fill="#FF5A00"
-  >
-    SEVA
-  </text>
-  <text
-    x="200"
-    y="440"
-    fontFamily="Cinzel, serif"
-    fontSize="35"
-    fontWeight="bold"
-    fill="#FF5A00"
-  >
-    360
-  </text>
-</svg>
-
-          </div>
+          <div className="h-20 w-auto">
+  <img src="/images/sevaLogo.svg" alt="Seva360 Logo" className="h-full" />
+</div>
             
             {/* Mobile Menu Toggle */}
             <button 

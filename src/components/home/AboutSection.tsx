@@ -28,9 +28,13 @@ const AboutSection = () => {
             <p className="text-seva-brown mb-4"> 
 
 </p>
-            <p className="text-seva-brown mb-6">As we walked alongside temple administrators, we listened to their stories and witnessed their daily challenges. We saw how time-consuming paperwork, manual record-keeping, and scattered processes took precious time away from serving devotees and nurturing the spiritual fabric of the community. These insights inspired us to create Seva360-a suite of digital tools designed to bring clarity, efficiency, and peace of mind to temple management.
+            <p className="text-seva-brown mb-6">It all began with a request from the sacred Shri RaghavendraSwami Matta in Navanagar Hubli.
 
-Today, Seva360 stands as a trusted partner to temples of all sizes. Our journey is guided by a simple belief: when temples are empowered with the right tools, they can focus more on their sacred mission and less on administrative burdens.
+When they approached us with a need for a better way to manage their temple activities, we saw more than just a project—we saw purpose. In that moment, it felt as though we had been chosen by the grace of Rayaru to undertake this sacred task. It wasn’t just an opportunity—it was a calling.
+What started as a simple solution soon turned into a deeper journey. Guided by the spirit of seva—selfless service—we began building something that could truly support the heart of temple life. Every step we've taken since has been rooted in devotion: to tradition, to transparency, and to making temple management easier and more divine.
+
+From Navanagar to today, Seva 360 continues to grow, blessed by the trust of institutions and the grace that guides our mission. And this is just the beginning.
+
 
 </p>
             
