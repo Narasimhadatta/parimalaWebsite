@@ -51,16 +51,16 @@ const About = () => {
       </Helmet>
       
       {/* Hero Banner */}
-      <div className="relative h-[600px]">
+      <div className="relative md:h-[600px] lg:h-[650px] sm:h-[550px]">
         {/* <img 
           src="https://t3.ftcdn.net/jpg/12/74/83/22/240_F_1274832255_ROkXSyS05Y0wkCDBHGeOvw9NxE9aUSv9.jpg" 
           alt="About Seva 360" 
           className="w-full h-full object-cover"
         /> */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        {/* <div className="absolute inset-0 flex items-center justify-center sm:p-0 sm:m-0">
           <div className="text-center text-white">
             <h1 className="text-5xl md:text-6xl font-cinzel font-bold mb-4 text-seva-red">About Us</h1>
-            <p className="text-lg max-w-3xl mx-auto px-4 text-3xl text-seva-brown mb-4">Samarth Meditech is a trusted name in healthcare innovation, committed to transforming the way medical services are delivered and managed. Founded in 2019, we have proudly served the healthcare industry for over 6 years, delivering cutting-edge digital solutions that enhance efficiency, accessibility, and patient care.
+            <p className="xl:text-lg  max-w-3xl mx-auto px-4  text-seva-brown mb-4">Samarth Meditech is a trusted name in healthcare innovation, committed to transforming the way medical services are delivered and managed. Founded in 2019, we have proudly served the healthcare industry for over 6 years, delivering cutting-edge digital solutions that enhance efficiency, accessibility, and patient care.
 
 At Samarth Meditech, our vision is to empower hospitals, clinics, and healthcare professionals with user-friendly, scalable, and reliable software tools. Over the years, we have developed a suite of healthcare applications tailored to the real-world needs of medical institutions — from hospital management systems to patient engagement platforms.
 
@@ -70,7 +70,22 @@ Driven by a passionate team of developers and designers, we believe in building 
 
 </p>
           </div>
-        </div>
+        </div> */}
+        <div className="flex flex-col items-center justify-center px-4 py-12  text-center text-white">
+  <h1 className="text-3xl sm:text-5xl md:text-6xl font-cinzel font-bold mb-4 text-seva-red">
+    About Us
+  </h1>
+  <p className="text-sm sm:text-base xl:text-lg max-w-3xl mx-auto text-seva-brown">
+    Samarth Meditech is a trusted name in healthcare innovation, committed to transforming the way medical services are delivered and managed. Founded in 2019, we have proudly served the healthcare industry for over 6 years, delivering cutting-edge digital solutions that enhance efficiency, accessibility, and patient care.
+    <br /><br />
+    At Samarth Meditech, our vision is to empower hospitals, clinics, and healthcare professionals with user-friendly, scalable, and reliable software tools. Over the years, we have developed a suite of healthcare applications tailored to the real-world needs of medical institutions — from hospital management systems to patient engagement platforms.
+    <br /><br />
+    Our latest product, Seva360, continues this tradition of excellence. It is designed to simplify operations, improve service delivery, and ensure a seamless experience for both providers and patients.
+    <br /><br />
+    Driven by a passionate team of developers and designers, we believe in building not just products, but partnerships that last. We are dedicated to quality, innovation, and continuous improvement — all to serve the greater goal of better healthcare for everyone.
+  </p>
+</div>
+
       </div>
 
       

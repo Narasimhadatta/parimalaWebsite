@@ -17,7 +17,7 @@ const slides: Slide[] = [
   {
     image: "/images/temple10.jpg",
 
-    title: "Revolutionize Temple Management with Seva360",
+    title: "Streamlining Temple Workflows with Seva360",
     description: "Experience the future of temple operations-secure, efficient, and effortless.",
     buttonText: "Our Services",
     buttonLink: "/services",

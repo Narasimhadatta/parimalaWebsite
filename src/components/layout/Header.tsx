@@ -124,34 +124,37 @@ const Header = () => {
           <div className="container mx-auto px-4 py-3">
             <Link href="/" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Home</Link>
             <div className="mobile-dropdown">
-              <button 
+              {/* <button 
                 className="w-full text-left py-3 font-cinzel text-seva-brown border-b border-seva-gold flex justify-between items-center"
                 onClick={() => toggleMobileDropdown('about')}
               >
                 About {mobileDropdowns.about ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-              </button>
-              <div className={mobileDropdowns.about ? "pl-4 bg-seva-cream" : "hidden pl-4 bg-seva-cream"}>
+              </button> */}
+              {/* <div className={mobileDropdowns.about ? "pl-4 bg-seva-cream" : "hidden pl-4 bg-seva-cream"}>
                 <Link href="/about#mission" className="block py-2 text-seva-brown">Our Mission</Link>
                 <Link href="/about#team" className="block py-2 text-seva-brown">Our Team</Link>
                 <Link href="/about#history" className="block py-2 text-seva-brown">Our History</Link>
-              </div>
+              </div> */}
             </div>
             <div className="mobile-dropdown">
-              <button 
+              {/* <button 
                 className="w-full text-left py-3 font-cinzel text-seva-brown border-b border-seva-gold flex justify-between items-center"
                 onClick={() => toggleMobileDropdown('services')}
               >
                 Services {mobileDropdowns.services ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-              </button>
-              <div className={mobileDropdowns.services ? "pl-4 bg-seva-cream" : "hidden pl-4 bg-seva-cream"}>
+              </button> */}
+              {/* <div className={mobileDropdowns.services ? "pl-4 bg-seva-cream" : "hidden pl-4 bg-seva-cream"}>
                 <Link href="/services#counseling" className="block py-2 text-seva-brown">Spiritual Counseling</Link>
                 <Link href="/services#meditation" className="block py-2 text-seva-brown">Meditation Classes</Link>
                 <Link href="/services#yoga" className="block py-2 text-seva-brown">Yoga Sessions</Link>
                 <Link href="/services#puja" className="block py-2 text-seva-brown">Puja Services</Link>
-              </div>
+              </div> */}
             </div>
-            <Link href="/events" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Events</Link>
-            <Link href="/gallery" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Gallery</Link>
+            <Link href="/about" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">About</Link>
+            <Link href="/services" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Services</Link>
+
+            {/* <Link href="/events" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Events</Link> */}
+            {/* <Link href="/gallery" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Gallery</Link> */}
             <Link href="/contact" className="block py-3 font-cinzel text-seva-brown border-b border-seva-gold">Contact</Link>
             
             <Link href="/contact" className="block mt-4 bg-seva-red text-white font-cinzel py-3 px-6 rounded text-center">
