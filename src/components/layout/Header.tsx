@@ -78,22 +78,22 @@ const Header = () => {
                 <Link href="/about" className={`font-cinzel ${location === '/about' ? 'text-seva-red' : 'text-seva-brown hover:text-seva-red'} transition duration-300`}>
                   About
                 </Link>
-                <div className="nav-dropdown">
+                {/* <div className="nav-dropdown">
                   <Link href="/about#mission" className="block py-2 text-seva-brown hover:text-seva-red">Our Mission</Link>
                   <Link href="/about#team" className="block py-2 text-seva-brown hover:text-seva-red">Our Team</Link>
                   <Link href="/about#history" className="block py-2 text-seva-brown hover:text-seva-red">Our History</Link>
-                </div>
+                </div> */}
               </div>
               <div className="nav-item">
                 <Link href="/services" className={`font-cinzel ${location === '/services' ? 'text-seva-red' : 'text-seva-brown hover:text-seva-red'} transition duration-300`}>
                   Services
                 </Link>
-                <div className="nav-dropdown">
+                {/* <div className="nav-dropdown">
                   <Link href="/services#counseling" className="block py-2 text-seva-brown hover:text-seva-red">Spiritual Counseling</Link>
                   <Link href="/services#meditation" className="block py-2 text-seva-brown hover:text-seva-red">Meditation Classes</Link>
                   <Link href="/services#yoga" className="block py-2 text-seva-brown hover:text-seva-red">Yoga Sessions</Link>
                   <Link href="/services#puja" className="block py-2 text-seva-brown hover:text-seva-red">Puja Services</Link>
-                </div>
+                </div> */}
               </div>
               {/* <div className="nav-item">
                 <Link href="/events" className={`font-cinzel ${location === '/events' ? 'text-seva-red' : 'text-seva-brown hover:text-seva-red'} transition duration-300`}>
