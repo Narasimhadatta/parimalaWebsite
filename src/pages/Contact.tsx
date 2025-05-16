@@ -105,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-cinzel font-bold text-seva-brown text-xl">Our Location</h3>
-                    <p className="text-seva-brown">123 Spiritual Way, Harmony Heights<br/>Serenity, CA 90210</p>
+                    <p className="text-seva-brown">#8, 1st Floor,, opp. Art College, Vidya Nagar, Karnataka 580031<br/>Hunashyal Avenue</p>
                   </div>
                 </div>
                 
@@ -115,8 +115,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-cinzel font-bold text-seva-brown text-xl">Phone</h3>
-                    <p className="text-seva-brown">(123) 456-7890</p>
-                    <p className="text-seva-brown">(987) 654-3210</p>
+                    <p className="text-seva-brown">+91 8951255200</p>
+                    {/* <p className="text-seva-brown">(987) 654-3210</p> */}
                   </div>
                 </div>
                 
@@ -126,8 +126,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-cinzel font-bold text-seva-brown text-xl">Email</h3>
-                    <p className="text-seva-brown">info@seva360.org</p>
-                    <p className="text-seva-brown">support@seva360.org</p>
+                    <p className="text-seva-brown">info@seva360.com</p>
+                    <p className="text-seva-brown">info@samarthmeditech.com</p>
                   </div>
                 </div>
                 
@@ -149,15 +149,15 @@ const Contact = () => {
                   <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Facebook">
                     <Facebook className="h-5 w-5" />
                   </a>
-                  <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Instagram">
+                  <a href="https://www.instagram.com/_ayuci_software_/?utm_source=qr&igsh=bjNhbXNnemhmeDlq#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Instagram">
                     <Instagram className="h-5 w-5" />
                   </a>
-                  <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Twitter">
+                  <a href="https://x.com/PvtSamarth28854" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Twitter">
                     <Twitter className="h-5 w-5" />
                   </a>
-                  <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="YouTube">
+                  {/* <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="YouTube">
                     <Youtube className="h-5 w-5" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

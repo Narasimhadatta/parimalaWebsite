@@ -28,17 +28,17 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <a href="tel:+1234567890" className="text-sm flex items-center">
-              <i className="fas fa-phone mr-2"></i> (123) 456-7890
+              <i className="fas fa-phone mr-2"></i> +91 8951255200
             </a>
-            <a href="mailto:info@seva360.org" className="text-sm flex items-center">
-              <i className="fas fa-envelope mr-2"></i> info@seva360.org
+            <a href="mailto:info@seva360.com" className="text-sm flex items-center">
+              <i className="fas fa-envelope mr-2"></i> info@seva360.com
             </a>
           </div>
           <div className="flex space-x-3">
             <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-            <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/_ayuci_software_/?utm_source=qr&igsh=bjNhbXNnemhmeDlq#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+            <a href="https://x.com/PvtSamarth28854" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+            {/* <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a> */}
           </div>
         </div>
       </div>

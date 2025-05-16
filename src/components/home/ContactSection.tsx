@@ -120,15 +120,15 @@ const ContactSection = () => {
                 <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Facebook">
                   <Facebook className="h-5 w-5" />
                 </a>
-                <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Instagram">
+                <a href="https://www.instagram.com/_ayuci_software_/?utm_source=qr&igsh=bjNhbXNnemhmeDlq#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Instagram">
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Twitter">
+                <a href="https://x.com/PvtSamarth28854" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </a>
-                <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="YouTube">
+                {/* <a href="#" className="bg-seva-red hover:bg-seva-brown text-white p-3 rounded-full transition duration-300" aria-label="YouTube">
                   <Youtube className="h-5 w-5" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
