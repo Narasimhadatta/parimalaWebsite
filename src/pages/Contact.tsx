@@ -1,9 +1,64 @@
+import { useState } from 'react'; // 👈 Import useState
 import { Helmet } from 'react-helmet';
 import { Link } from 'wouter';
 import DecorativeDivider from '@/components/ui/DecorativeDivider';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
-
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  // 👉 Step 2: State for submission status (e.g., submitting, success, error)
+  const [status, setStatus] = useState('');
+
+  // 👉 Step 3: Handler to update state when user types
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // 👉 Step 4: Handler to submit the form
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default browser submission
+    setStatus('submitting');
+
+    // ❗️❗️ PASTE YOUR GOOGLE APPS SCRIPT URL HERE ❗️❗️
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwDNROBKGzTnVv8ktqq5ItWp6FmqjhVgfuRHR41HRkBKBJoR8LAEcxePKWRog8Rvog/exec';
+
+    const form = new FormData();
+  Object.entries(formData).forEach(([key, value]) => form.append(key, value));
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: form,
+      // mode:'no-cors',
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // },
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      
+      if (data.result === 'success') {
+        setStatus('success');
+        // Clear the form
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error(data.error || 'Unknown error');
+      }
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      setStatus('error');
+    });
+  };
   return (
     <>
       <Helmet>
@@ -39,24 +94,31 @@ const Contact = () => {
               <h2 className="text-3xl font-cinzel font-bold text-seva-red mb-6">Get in Touch</h2>
               <div className="w-24 h-1 bg-seva-gold mb-6"></div>
               
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
+
                 <div className="grid md:grid-cols-2 gap-6">
+
                   <div>
                     <label htmlFor="name" className="block text-seva-brown mb-2 font-cinzel">Your Name</label>
                     <input 
                       type="text" 
                       id="name" 
-                      name="name" 
+                      name="name"
+                      value={formData.name} // Bind value to state
+                      onChange={handleChange} // Handle changes
                       className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-seva-gold"
                       required
                     />
                   </div>
+
                   <div>
                     <label htmlFor="email" className="block text-seva-brown mb-2 font-cinzel">Your Email</label>
                     <input 
                       type="email" 
                       id="email" 
-                      name="email" 
+                      name="email"
+                      value={formData.email} // Bind value to state
+                      onChange={handleChange} // Handle changes
                       className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-seva-gold"
                       required
                     />
@@ -68,7 +130,9 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="subject" 
-                    name="subject" 
+                    name="subject"
+                    value={formData.subject} // Bind value to state
+                    onChange={handleChange} // Handle changes
                     className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-seva-gold"
                     required
                   />
@@ -79,7 +143,9 @@ const Contact = () => {
                   <textarea 
                     id="message" 
                     name="message" 
-                    rows={6} 
+                    rows={6}
+                    value={formData.message} // Bind value to state
+                    onChange={handleChange} // Handle changes
                     className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-seva-gold"
                     required
                   ></textarea>
@@ -88,10 +154,16 @@ const Contact = () => {
                 <button 
                   type="submit" 
                   className="bg-seva-red hover:bg-seva-brown text-white font-cinzel py-3 px-8 rounded transition duration-300"
+                  disabled={status === 'submitting'} // Disable button while submitting
                 >
-                  Send Message
+                  {status === 'submitting' ? 'Sending...' : 'Send Message'}
                 </button>
+
+                {/* 👉 Step 6: Show submission status message */}
+                {status === 'success' && <p className="text-green-600 mt-4">Message sent successfully! We'll be in touch soon.</p>}
+                {status === 'error' && <p className="text-red-600 mt-4">Something went wrong. Please try again.</p>}
               </form>
+      
             </div>
             
             <div>
