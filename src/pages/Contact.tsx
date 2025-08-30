@@ -9,19 +9,33 @@ const Contact = () => {
     email: '',
     subject: '',
     message: '',
+    contact:''
   });
 
   // 👉 Step 2: State for submission status (e.g., submitting, success, error)
   const [status, setStatus] = useState('');
 
   // 👉 Step 3: Handler to update state when user types
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+ const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  if (name === "contact") {
+    // Allow empty string (for reset) OR up to 10 digits only
+    if (value === "" || /^\d{0,10}$/.test(value)) {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
+  } else {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
-  };
+  }
+};
+
+;
 
   // 👉 Step 4: Handler to submit the form
   const handleSubmit = (e) => {
@@ -29,7 +43,7 @@ const Contact = () => {
     setStatus('submitting');
 
     // ❗️❗️ PASTE YOUR GOOGLE APPS SCRIPT URL HERE ❗️❗️
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwDNROBKGzTnVv8ktqq5ItWp6FmqjhVgfuRHR41HRkBKBJoR8LAEcxePKWRog8Rvog/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNCa6lURtevkFJQQZPnhJxqaXXcu2PJBFezk-Uan1NJx8VonVXWCtMV4IrXpJJXdg/exec';
 
     const form = new FormData();
   Object.entries(formData).forEach(([key, value]) => form.append(key, value));
@@ -49,7 +63,7 @@ const Contact = () => {
       if (data.result === 'success') {
         setStatus('success');
         // Clear the form
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '' ,contact:''});
       } else {
         throw new Error(data.error || 'Unknown error');
       }
@@ -124,7 +138,28 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
+               <div>
+  <label
+    htmlFor="contact"
+    className="block text-seva-brown mb-2 font-cinzel"
+  >
+    Contact Number
+  </label>
+  <input
+  type="tel"
+  id="contact"
+  name="contact"
+  value={formData.contact}
+  onChange={handleChange}
+  maxLength={10}
+  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-seva-gold"
+  required
+/>
+
+
+</div>
+
                 <div>
                   <label htmlFor="subject" className="block text-seva-brown mb-2 font-cinzel">Subject</label>
                   <input 
