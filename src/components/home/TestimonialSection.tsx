@@ -8,21 +8,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote: "Seva360 has streamlined our entire donation and darshan booking system. The staff finds it easy to use, and devotees appreciate the transparency and convenience.",
-    name: "Rajiv Kumar",
-    initials: "RK",
-    memberSince: "Raghavendra Swami Matta"
+    name: "Vishwapriya Acharya",
+    initials: "VP",
+    memberSince: "SHRI SANATANADHARMA RAKSHANA TRUST"
   },
   {
     quote: "Seva360 helped digitize our pooja bookings and archana schedules. It supports multiple languages and is very intuitive. Devotees can now book services online from anywhere.",
-    name: "Sunita Patel | Temple Manager",
-    initials: "SP",
-    memberSince: "Raghavendra Swami Matta"
+    name: "Pradyumna Acharya",
+    initials: "PA",
+    memberSince: "MAHACHARYA VIDYALAYA "
   },
   {
     quote: "We used to manage festival bookings manually, which was chaotic. With Seva360, all offerings, bookings, and volunteer schedules are now efficiently handled. It's a complete game-changer.",
-    name: "Ananya Mehta | Events Coordinator",
-    initials: "AM",
-    memberSince: "Trinetra Narasimha Temple"
+    name: "HANUMATH RAO",
+    initials: "HR",
+    memberSince: "RAGHAVENDRA SWAMI MATTA"
   }
 ];
 

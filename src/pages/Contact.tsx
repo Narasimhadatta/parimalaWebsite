@@ -212,7 +212,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-cinzel font-bold text-seva-brown text-xl">Our Location</h3>
-                    <p className="text-seva-brown">#8, 1st Floor,, opp. Art College, Vidya Nagar, Karnataka 580031<br/>Hunashyal Avenue</p>
+                    <p>Head Office</p>
+                    <p className="text-seva-brown">#8, 1st Floor,, opp. Art College, Vidya Nagar,Hubli, Karnataka 580031<br/>Hunashyal Avenue</p>
+                    <p>Branch Office</p>
+                    <p className="text-seva-brown"> No.495/B, Ground Floor, 1st Block, 15th Main Rd, 3rd Stage, Basaveshwar Nagar, Bengaluru, Karnataka 560079</p>
+
                   </div>
                 </div>
                 
@@ -232,9 +236,9 @@ const Contact = () => {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-cinzel font-bold text-seva-brown text-xl">Email</h3>
+                    <h3 className="font-cinzel font-bold text-seva-brown tFext-xl">Email</h3>
                     <p className="text-seva-brown">info@seva360.com</p>
-                    <p className="text-seva-brown">info@samarthmeditech.com</p>
+                    <p className="text-seva-brown">hr@samarthmeditech.com</p>
                   </div>
                 </div>
                 
@@ -283,15 +287,28 @@ const Contact = () => {
             <p className="text-lg text-seva-brown max-w-3xl mx-auto">Visit our center to experience peace and spirituality in person.</p>
           </div>
           
-          <div className="rounded-lg shadow-xl overflow-hidden">
-            {/* Embed map would go here - using iframe placeholder */}
-            <div >
-              {/* <p className="text-seva-brown font-cinzel text-xl">Interactive Map Placeholder</p> */}
-              {/* In real implementation, use Google Maps or other map service iframe */}
-          <iframe className="bg-gray-300 w-full h-[450px] flex items-center justify-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.5655700565826!2d75.12266835805322!3d15.36546207164948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d73252c874a1%3A0xdf03d847e3fe4c29!2sSathvik%20Softech!5e0!3m2!1sen!2sin!4v1746613919135!5m2!1sen!2sin" width="600" height="450"  loading="lazy" ></iframe>
-              
-            </div>
-          </div>
+         <div className="rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row gap-4" >
+  {/* Map 1 */}
+
+  <div className="w-full md:w-1/2">
+            <p className="text-lg text-seva-brown max-w-3xl mx-auto text-center">Main Office</p>
+    {/* In real implementation, use Google Maps or other map service iframe */}
+    <iframe
+      className="bg-gray-300 w-full h-[450px]"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.5655700565826!2d75.12266835805322!3d15.36546207164948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d73252c874a1%3A0xdf03d847e3fe4c29!2sSathvik%20Softech!5e0!3m2!1sen!2sin!4v1746613919135!5m2!1sen!2sin"
+      height="450"
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  {/* Map 2 */}
+  <div className="w-full md:w-1/2">
+            <p className="text-lg text-seva-brown max-w-3xl mx-auto text-center">Branch Office</p>
+    {/* In real implementation, use Google Maps or other map service iframe */}
+   <iframe   className="bg-gray-300 w-full h-[450px]" height="450"
+      loading="lazy" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.6339100371783!2d77.53794227507682!3d12.995251187322292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU5JzQyLjkiTiA3N8KwMzInMjUuOSJF!5e0!3m2!1sen!2sin!4v1762521155962!5m2!1sen!2sin" ></iframe>
+  </div>
+</div>
           
           <div className="mt-8 grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">

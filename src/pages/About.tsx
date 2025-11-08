@@ -76,13 +76,13 @@ Driven by a passionate team of developers and designers, we believe in building 
     About Us
   </h1>
   <p className="text-sm sm:text-base xl:text-lg max-w-3xl mx-auto text-seva-brown">
-    Samarth Meditech is a trusted name in healthcare innovation, committed to transforming the way medical services are delivered and managed. Founded in 2019, we have proudly served the healthcare industry for over 6 years, delivering cutting-edge digital solutions that enhance efficiency, accessibility, and patient care.
+  Samarth Meditech is a trusted name in healthcare innovation, Samarth Meditech is a trusted name in software innovation, committed to transforming the way services are delivered and managed. Headquartered in Hubli and working in collaboration with Lamacode (Bengaluru), we were founded in 2019 and have proudly served our clients for over 6 years, delivering cutting-edge digital solutions.
     <br /><br />
-    At Samarth Meditech, our vision is to empower hospitals, clinics, and healthcare professionals with user-friendly, scalable, and reliable software tools. Over the years, we have developed a suite of healthcare applications tailored to the real-world needs of medical institutions — from hospital management systems to patient engagement platforms.
+    At Samarth Meditech, our vision is to empower organizations with user-friendly, scalable, and reliable software tools. Over the years, we have developed a suite of applications tailored to the real-world needs of various institutions.
     <br /><br />
-    Our latest product, Seva360, continues this tradition of excellence. It is designed to simplify operations, improve service delivery, and ensure a seamless experience for both providers and patients.
+    Our latest product, Seva360, continues this tradition of excellence. It is a comprehensive temple management software designed to simplify operations, manage sevas and donations, and ensure a seamless experience for both temple administration and devotees.
     <br /><br />
-    Driven by a passionate team of developers and designers, we believe in building not just products, but partnerships that last. We are dedicated to quality, innovation, and continuous improvement — all to serve the greater goal of better healthcare for everyone.
+    Driven by a passionate team of developers and designers, we believe in building not just products, but partnerships that last. We are dedicated to quality, innovation, and continuous improvement.
   </p>
 </div>
 

@@ -75,8 +75,11 @@ const ContactSection = () => {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-cinzel font-bold text-seva-brown">Our Location</h4>
-                  <p className="text-seva-brown"> #8, 1st Floor, opp. Art College ,<br/> Vidya Nagar, Karnataka 580031</p>
+                    <p>Head Office</p>
+                    <p className="text-seva-brown">#8, 1st Floor,, opp. Art College, Vidya Nagar,Hubli, Karnataka 580031<br/>Hunashyal Avenue</p>
+                    <p>Branch Office</p>
+                    <p className="text-seva-brown"> No.495/B, Ground Floor, 1st Block, 15th Main Rd, 3rd Stage, Basaveshwar Nagar, Bengaluru, Karnataka 560079</p>
+
                 </div>
               </div>
               
