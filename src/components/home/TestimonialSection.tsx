@@ -14,14 +14,14 @@ const testimonials: Testimonial[] = [
     name: "Vishwapriya Acharya",
     initials: "VP",
     memberSince: "SHRI SANATANADHARMA RAKSHANA TRUST",
-    image: '/images/test1.jpeg'
+    image: '/images/test3.jpeg'
   },
   {
     quote: "Seva360 helped digitize our pooja bookings and archana schedules. It supports multiple languages and is very intuitive. Devotees can now book services online from anywhere.",
     name: "Pradyumna Acharya",
     initials: "PA",
     memberSince: "MAHACHARYA VIDYALAYA ",
-    image: '/images/test3.jpeg'
+    image: '/images/test1.jpeg'
   },
   {
     quote: "We used to manage festival bookings manually, which was chaotic. With Seva360, all offerings, bookings, and volunteer schedules are now efficiently handled. It's a complete game-changer.",
