@@ -76,11 +76,11 @@ Driven by a passionate team of developers and designers, we believe in building 
     About Us
   </h1>
   <p className="text-sm sm:text-base xl:text-lg max-w-3xl mx-auto text-seva-brown">
-  Samarth Meditech is a trusted name in healthcare innovation, Samarth Meditech is a trusted name in software innovation, committed to transforming the way services are delivered and managed. Headquartered in Hubli and working in collaboration with Lamacode (Bengaluru), we were founded in 2019 and have proudly served our clients for over 6 years, delivering cutting-edge digital solutions.
+  Seva360 is proudly developed and maintained by Samarth Meditech, a software innovation firm headquartered in Hubli with over six years of industry excellence.
     <br /><br />
-    At Samarth Meditech, our vision is to empower organizations with user-friendly, scalable, and reliable software tools. Over the years, we have developed a suite of applications tailored to the real-world needs of various institutions.
+    Founded in 2019, Samarth Meditech—in collaboration with Lamacode (Bengaluru)—has built a reputation for creating reliable, user-friendly digital tools that solve complex operational challenges. We bring that same commitment to quality and innovation to Seva360.
     <br /><br />
-    Our latest product, Seva360, continues this tradition of excellence. It is a comprehensive temple management software designed to simplify operations, manage sevas and donations, and ensure a seamless experience for both temple administration and devotees.
+    Our goal with Seva360 is to empower temple administrations with a comprehensive management suite that simplifies daily tasks, from seva booking to devotee engagement, ensuring you can focus on what matters most: service and tradition.
     <br /><br />
     Driven by a passionate team of developers and designers, we believe in building not just products, but partnerships that last. We are dedicated to quality, innovation, and continuous improvement.
   </p>
