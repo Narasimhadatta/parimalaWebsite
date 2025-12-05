@@ -26,18 +26,18 @@ const products = [
       "Smart categorization and tagging",
     ],
   },
-  {
-    name: "Sadguru Screens",
-    subtitle: "Digital Printing Service Management",
-    icon: "🖨️",
-    description: `Sadguru Screens brings printing services into the digital age with solutions for order tracking, design approvals, job scheduling, and delivery coordination.`,
-    features: [
-      "Centralized job scheduling",
-      "Design proof management",
-      "Client communication tracking",
-      "Faster turnaround with transparency",
-    ],
-  },
+  // {
+  //   name: "Sadguru Screens",
+  //   subtitle: "Digital Printing Service Management",
+  //   icon: "🖨️",
+  //   description: `Sadguru Screens brings printing services into the digital age with solutions for order tracking, design approvals, job scheduling, and delivery coordination.`,
+  //   features: [
+  //     "Centralized job scheduling",
+  //     "Design proof management",
+  //     "Client communication tracking",
+  //     "Faster turnaround with transparency",
+  //   ],
+  // },
 ];
 const About = () => {
   return (
@@ -196,7 +196,7 @@ Driven by a passionate team of developers and designers, we believe in building 
     <p className="text-seva-brown mb-10 text-center max-w-3xl mx-auto">
       At <strong>Samarth Meditech</strong>, we build purpose-driven digital solutions tailored to the unique needs of organizations that serve. Each of our products is designed to simplify complex operations, enhance transparency, and enable impactful service.
     </p>
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
       {products.map((product, index) => (
         <div
           key={index}

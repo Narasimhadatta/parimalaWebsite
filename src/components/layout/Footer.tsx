@@ -72,12 +72,12 @@ const Footer = () => {
         <div className="border-t border-seva-gold opacity-30 my-8"></div>
         
         <div className="text-center">
-          <p>&copy; {new Date().getFullYear()} Seva360. All rights reserved.</p>
-          <div className="flex justify-center space-x-6 mt-4">
+          <p>  &copy; {new Date().getFullYear()} Samarth Meditech Private Limited. All rights reserved.</p>
+          {/* <div className="flex justify-center space-x-6 mt-4">
             <Link href="/privacy" className="text-sm text-white hover:text-seva-gold transition duration-300">Privacy Policy</Link>
             <Link href="/terms" className="text-sm text-white hover:text-seva-gold transition duration-300">Terms of Service</Link>
             <Link href="/sitemap" className="text-sm text-white hover:text-seva-gold transition duration-300">Sitemap</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
