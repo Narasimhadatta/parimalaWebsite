@@ -110,13 +110,25 @@ const Header = () => {
                   Contact
                 </Link>
               </div>
+              <div className="nav-item">
+                <a 
+                  href="https://app.sevas360.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-cinzel text-seva-brown hover:text-seva-red transition duration-300"
+                >
+                  Login
+                </a>
+              </div>
             </div>
             
             {/* Donate Button */}
             <Link href="/contact" className="hidden lg:block bg-seva-red hover:bg-seva-brown text-white font-cinzel py-2 px-6 rounded transition duration-300">
                Book Demo Now
             </Link>
+          
           </div>
+          
         </div>
         
         {/* Mobile Navigation */}
