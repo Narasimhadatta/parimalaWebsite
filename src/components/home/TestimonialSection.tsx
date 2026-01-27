@@ -23,11 +23,18 @@ const testimonials: Testimonial[] = [
     memberSince: "MAHACHARYA VIDYALAYA ",
     image: '/images/test1.jpeg'
   },
+  // {
+  //   quote: "We used to manage festival bookings manually, which was chaotic. With Seva360, all offerings, bookings, and volunteer schedules are now efficiently handled. It's a complete game-changer.",
+  //   name: "HANUMATH RAO",
+  //   initials: "HR",
+  //   memberSince: "RAGHAVENDRA SWAMI MATTA",
+  // },
   {
     quote: "We used to manage festival bookings manually, which was chaotic. With Seva360, all offerings, bookings, and volunteer schedules are now efficiently handled. It's a complete game-changer.",
-    name: "HANUMATH RAO",
-    initials: "HR",
-    memberSince: "RAGHAVENDRA SWAMI MATTA",
+    name: "RAVI ARCHARYA",
+    initials: "RA",
+    memberSince: "Trinetra Shri Lakshmi Narasimha Temple",
+    image:'images/test4.jpeg'
   }
 ];
 
